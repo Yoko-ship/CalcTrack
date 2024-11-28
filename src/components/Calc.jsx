@@ -5,6 +5,9 @@ import historyImage from "../assets/history.png";
 import Modal from "./Modal";
 import "./css/modal.css";
 import { calcuation } from "./Calculate";
+import Grid from "./Grid";
+import History from "./History";
+import Div from "./Div";
 
 export const inputValues = React.createContext();
 function Calc() {
@@ -40,38 +43,29 @@ function Calc() {
     setShow(!show);
   };
 
+
+
   return (
     <>
-      <div
-        className="container"
-        style={{ filter: show ? "brightness(50%)" : "brightness(100%)" }}
-      >
+      <Div show={show}>
+        <History
+          showHistory={showHistory}
+          historyImage={historyImage}
+          inputPrev={inputPrev}
+          span={inputPrev}
+          inputValue={inputValue}
+        />
         <section>
-          <div className="btn-div">
-            <button onClick={showHistory}>
-              <img src={historyImage}></img>
-            </button>
-          </div>
-          <div className="display">
-            {inputPrev ? (
-              <span className="history">{inputPrev}=</span>
-            ) : (
-              <span></span>
-            )}
-            <p>{inputValue}</p>
-          </div>
-        </section>
-        <section>
-          <div className="grids">
+          <Grid>
             <Grids
               func={(e) => buttonHandler(e.target.value)}
               equal={equalTo}
               DEL={delButton}
               CLEAR={clearButton}
             />
-          </div>
+          </Grid>
         </section>
-      </div>
+      </Div>
       <div>
         <inputValues.Provider value={inputHistory}>
           {show ? <Modal /> : <p></p>}
