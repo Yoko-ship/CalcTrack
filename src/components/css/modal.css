@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.modal-active{
+    position: absolute;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 495px;
+    top: calc(50% - 250px);
+    left:0;
+    cursor: default;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+.modal-active button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.modal-active img{
+    width: 50px;
+    height: 50px;
+    background: none;
+}

@@ -1,0 +1,77 @@
+body{
+    background-color: #0F0F0F;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+section img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+}
+.btn-div button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+section .btn-div{
+    padding: 10px;
+    margin-right: 10px;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    border: 1px solid #ccc;
+    padding: 20px;
+    gap: 4px;
+}
+.grid button{
+    padding: 15px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grid button:hover{
+    transition: 0.2s ease;
+    transform: scale(1.1);
+}
+
+.display{   
+    padding: 15px;
+    font-size: 20px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+.display p{
+    text-align: start;
+    font-size: 20px;
+}
+.dangerous{
+    color: black;
+    background-color: red;
+}
+
+.number{
+    background-color: #3C4043;
+    color: white;
+}
+
+.history{
+    font-size: 15px;
+    font-weight: 50;
+    color: grey;
+}

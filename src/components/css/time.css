@@ -1,0 +1,28 @@
+.converting{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.converting input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.converting label{
+    text-align: center;
+    font-size: 20px;
+}
+.converting button{
+    padding: 10px;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
